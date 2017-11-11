@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sy.androidgame2048.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#507886">
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textSize="26dp"
+            android:textColor="#FFFAFA"
+            android:layout_marginLeft="80dp"/>
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textColor="#FFFAFA"
+            android:layout_marginLeft="80dp"/>
+
+    </LinearLayout>
+
+    <com.example.sy.androidgame2048.GameView
+    android:id="@+id/gameView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:fastScrollEnabled="false"
+
+   >
+    </com.example.sy.androidgame2048.GameView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#507886"
+        >
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="50dp"
+            android:background="@drawable/wechat"
+            android:id="@+id/wehcatb"/>
+        <Button
+            android:layout_width="142dp"
+            android:layout_height="50dp"
+            android:background="@drawable/more"
+            android:layout_marginLeft="77dp"
+            android:id="@+id/infob"/>
+    </LinearLayout>
+
+</LinearLayout>
